@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\")",
+      "Bash(mkdir -p app)",
+      "Bash(git init)",
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Next.js project setup\n\n- Set up Next.js 15 with App Router\n- Configure TypeScript\n- Add Tailwind CSS\n- Create basic layout and home page\n- Add ESLint configuration\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config --global user.name \"안상현\")",
+      "Bash(git remote add origin https://github.com/ash91300-cmd/medexnet.git)",
+      "Bash(git branch -M main)",
+      "Bash(git push -u origin main)",
+      "Bash(curl -s -X POST \"https://otsrqyrvcgoejffgvwip.supabase.co/rest/v1/rpc\"  -H \"apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im90c3JxeXJ2Y2dvZWpmZmd2d2lwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExMjQ5MTMsImV4cCI6MjA4NjcwMDkxM30.EdIbdoczvzMZ6UYUIHBKrpLCWxLI4w-s_ZKtF-RjAWg\"  -H \"Content-Type: application/json\")",
+      "Bash(curl:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
+}
